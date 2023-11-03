@@ -1,3 +1,21 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+
+/* variables */
+:root {
+    --space-color: #e9f1fa;
+    --dark-color: #18333e;
+}
+
+/* .page */
+
+.page {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* .wrapper */
 
 .wrapper {
@@ -23,25 +41,96 @@
     justify-content: space-between;
     align-items: center;
 
+    margin: 0 auto 58px;
     padding: 30px 0 0;
+}
+
+.header__logo {
+    flex: 0 0 72px;
+}
+
+.logo__img {
+    display: block;
+
+    width: 100%;
 }
 
 .header__label {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 60px;
+
+    width: 100%;
+    max-width: 780px;
 }
 
 .header__search {
+    position: relative;
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
+    max-width: 668px;
+}
+
+.search__input {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px 45px 13px;
+
+    background: var(--space-color);
+    border: none;
+    border-radius: 26.5px;
+}
+
+.search__icon {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.header__filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 52px;
+    height: 52px;
+
+    background: var(--dark-color);
+    border-radius: 50%;
+}
+
+.header__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    max-width: 400px;
 }
 
 .page__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
