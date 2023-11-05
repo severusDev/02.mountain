@@ -18,10 +18,13 @@
 
 /* .page */
 
-.page {
+.document, 
+.document__page {
     font-family: "Baloo 2", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    color: var(--dark-color);
 }
 
 /* .wrapper */
@@ -34,7 +37,7 @@
     max-width: 1600px;
 
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 50px 24px;
 }
 
 /* .header */
@@ -44,17 +47,15 @@
 }
 
 .page__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     margin: 0 auto 58px;
     padding: 30px 0 0;
 }
 
 .header__logo {
-    flex: 0 0 72px;
+    width: 72px;
 }
 
 .logo__img {
@@ -112,8 +113,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 52px;
-    height: 52px;
+    flex: 0 0 53px;
+    height: 53px;
 
     background: var(--dark-color);
     border-radius: 50%;
@@ -141,4 +142,99 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+}
+
+/* .nav */
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 63px;
+
+    margin-bottom: 213px;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav__sign {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+
+/* .intro */
+
+.intro__title {
+    margin: 0 0 17px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.intro__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 57px;
+
+    margin: 0 0 37px;
+}
+
+.intro__link {
+    opacity: 0.8;
+}
+
+.intro__cards {
+    gap: 30px;
+}
+
+/* .card */
+
+.card__img-label {
+    overflow: hidden;
+
+    margin: 0 0 21px;
+
+    border-radius: 35px;
+}
+
+.card__contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__title {
+    margin: 0 0 7px;
+}
+
+.card__geo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
