@@ -1,15 +1,55 @@
 /* fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
-
+/* baloo2 */
+/* regular */
 @font-face {
-    font-family: "Baloo";
-    src: url("../fonts/baloo/Baloo2-Regular.ttf") format('truetype');
-         font-weight: 400;
-         font-display: swap;
-         font-style: normal;
-  }
-  
+    font-family: "Baloo 2";
+    src: local("Baloo 2"),
+        url("../fonts/baloo/regular/baloo2-regular.eot"),
+        url("../fonts/baloo/regular/baloo2-regular.eot") format("embedded-opentype"),
+        url("../fonts/baloo/regular/baloo2-regular.woff2") format("woff2"),
+        url("../fonts/baloo/regular/baloo2-regular.woff") format("woff"),
+        url("../fonts/baloo/regular/baloo2-regular.ttf") format("truetype"),
+        url("../fonts/baloo/regular/baloo2-regular.otf") format("opentype"),
+        url("../fonts/baloo/regular/baloo2-regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* medium */
+@font-face {
+    font-family: "Baloo 2";
+    src: local("Baloo 2"),
+        url("../fonts/baloo/medium/baloo2-medium.eot"),
+        url("../fonts/baloo/medium/baloo2-medium.eot") format("embedded-opentype"),
+        url("../fonts/baloo/medium/baloo2-medium.woff2") format("woff2"),
+        url("../fonts/baloo/medium/baloo2-medium.woff") format("woff"),
+        url("../fonts/baloo/medium/baloo2-medium.ttf") format("truetype"),
+        url("../fonts/baloo/medium/baloo2-medium.otf") format("opentype"),
+        url("../fonts/baloo/medium/baloo2-medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* semibold */
+@font-face {
+    font-family: "Baloo 2";
+    src: local("Baloo 2"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.eot"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.eot") format("embedded-opentype"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.woff2") format("woff2"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.woff") format("woff"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.ttf") format("truetype"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.otf") format("opentype"),
+        url("../fonts/baloo/semibold/baloo2-semiBold.svg") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* variables */
 :root {
     --space-color: #e9f1fa;
