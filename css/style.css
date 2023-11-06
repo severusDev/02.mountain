@@ -77,6 +77,8 @@
 }
 
 .page__wrapper {
+    overflow: hidden;
+    
     max-width: 1600px;
 
     margin: 0 auto;
@@ -252,18 +254,13 @@
     gap: 14px;
 }
 
-.nav__link--active .nav__desc {
-    position: relative;
-    left: 16px;
-}
-
 .nav__link--active::after {
     content: "";
 
     position: absolute;
-    top: -100%;
+    top: -50%;
     right: 0;
-    left: -65%;
+    left: -67%;
     z-index: -1;
 
     display: block;
@@ -273,6 +270,16 @@
 
     border-radius: 0 35px 35px 0;
     background: var(--accent-color);
+}
+
+.nav__desc {
+    position: relative;
+
+    padding: 10px 15px 5px 0;
+}
+
+.nav__link--active .nav__desc {
+    left: 16px;
 }
 
 .nav__sign {
