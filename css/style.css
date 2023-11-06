@@ -221,6 +221,7 @@
 .page__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 
     width: 100%;
 }
@@ -408,8 +409,34 @@
 
     padding: 18px 21px 17px;
 
+    border: 1px solid var(--light-color);
+    border-radius: 40px;
+
+    color: var(--dark-color);
+
+    transition: border-color 0.3s ease-in, background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.event__item:hover {
+    border: 1px solid var(--dark-color);
+}
+
+.event__item--active {
     background: var(--dark-color);
     border-radius: 40px;
 
     color: var(--light-color);
+}
+
+.event__item--active:hover {
+    border: 1px solid var(--accent-color);
+}
+
+/* .slider */
+
+.slider__card {
+    overflow: hidden;
+
+    border-radius: 30px;
 }
