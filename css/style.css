@@ -56,7 +56,9 @@
     --light-gray: #b4bcc4;
     --dark-color: #18333e;
     --light-color: #ffffff;
+    --opacity-color: rgba(255, 255, 255, 0.7);
     --accent-color: #f9d44a;
+    --active-color: #ff7f5c;
 }
 
 /* .page */
@@ -330,6 +332,8 @@
 /* .card */
 
 .card__img-label {
+    position: relative;
+
     overflow: hidden;
 
     margin: 0 0 21px;
@@ -342,6 +346,35 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+
+.card__like {
+    position: absolute;
+    top: 11%;
+    right: 12%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid var(--light-color);
+    border-radius: 50%;
+    background: var(--opacity-color);
+}
+
+.like__icon {
+    fill: var(--dark-color);
+    
+    transition: fill 0.3s ease-in;
+}
+
+.like__icon--active {
+    fill: var(--active-color);
 }
 
 .card__title {

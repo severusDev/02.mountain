@@ -3,12 +3,13 @@
 let navLinks = document.querySelectorAll(".nav__link");
 let activeLink = document.querySelector(".nav__link--active");
 let eventItems = document.querySelectorAll(".event__item");
-
+let likeIcons = document.querySelectorAll(".like__icon");
 
 // navigation
 
 navLinks.forEach(item => {
     item.addEventListener("click", (event) => {
+        event.preventDefault();
         removeLink();
         toggleLink(event.currentTarget);
     });
@@ -42,4 +43,18 @@ function removeStyleEvent() {
     eventItems.forEach(item => {
         item.classList.remove("event__item--active")
     });
+};
+
+
+// cards like
+
+likeIcons.forEach(item => {
+    item.addEventListener("click", (event) => {
+        event.preventDefault();
+        toggleStyleIcon(event.currentTarget);
+    });
+});
+
+function toggleStyleIcon(elem) {
+    elem.classList.toggle("like__icon--active");
 };
