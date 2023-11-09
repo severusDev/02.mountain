@@ -373,6 +373,11 @@
     transition: fill 0.3s ease-in;
 }
 
+.rating__icon {
+    position: relative;
+    top: 4px;
+}
+
 .like__icon--active {
     fill: var(--active-color);
 }
